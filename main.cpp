@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 
-// previne copierea prin declararea privata a copy constructorului si copy assignmentului
 class Uncopyable {
     protected:
         Uncopyable() {}
@@ -22,13 +21,13 @@ class Vagon {
             this->nume =  nume;
             std::cout<<"Constructor clasa Vagon"<<std::endl;
         }
-        virtual ~Vagon() {  //pentru a fi siguri ca se distruge si clasa derivata odata cu cea de baza
+        virtual ~Vagon() {  
             std::cout<<"Destructor clasa Vagon"<<std::endl;
         }
-        Vagon(const Vagon&) {                    //deep copy
+        Vagon(const Vagon&) {                    
             std::cout<<"Copy Constructor clasa Vagon"<<std::endl; 
         }    
-        Vagon& operator = (const Vagon& v) {    //shallow copy
+        Vagon& operator = (const Vagon& v) {    
             std::cout<<"Copy Assignment clasa Vagon"<<std::endl;
         }     
         int getId() {
