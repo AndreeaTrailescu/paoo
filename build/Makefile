@@ -129,6 +129,54 @@ myproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/build
 .PHONY : myproject/fast
 
+Vagon.obj: Vagon.cpp.obj
+.PHONY : Vagon.obj
+
+# target to build an object file
+Vagon.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/Vagon.cpp.obj
+.PHONY : Vagon.cpp.obj
+
+Vagon.i: Vagon.cpp.i
+.PHONY : Vagon.i
+
+# target to preprocess a source file
+Vagon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/Vagon.cpp.i
+.PHONY : Vagon.cpp.i
+
+Vagon.s: Vagon.cpp.s
+.PHONY : Vagon.s
+
+# target to generate assembly for a file
+Vagon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/Vagon.cpp.s
+.PHONY : Vagon.cpp.s
+
+VagonCalatori.obj: VagonCalatori.cpp.obj
+.PHONY : VagonCalatori.obj
+
+# target to build an object file
+VagonCalatori.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/VagonCalatori.cpp.obj
+.PHONY : VagonCalatori.cpp.obj
+
+VagonCalatori.i: VagonCalatori.cpp.i
+.PHONY : VagonCalatori.i
+
+# target to preprocess a source file
+VagonCalatori.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/VagonCalatori.cpp.i
+.PHONY : VagonCalatori.cpp.i
+
+VagonCalatori.s: VagonCalatori.cpp.s
+.PHONY : VagonCalatori.s
+
+# target to generate assembly for a file
+VagonCalatori.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/VagonCalatori.cpp.s
+.PHONY : VagonCalatori.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... myproject"
+	@echo "... Vagon.obj"
+	@echo "... Vagon.i"
+	@echo "... Vagon.s"
+	@echo "... VagonCalatori.obj"
+	@echo "... VagonCalatori.i"
+	@echo "... VagonCalatori.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
