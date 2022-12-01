@@ -41,4 +41,7 @@ class Vagon {
         std::string getNume() {
             return nume;
         }
+        void setId(int id) {
+            this->id = id;
+        }
 };
